@@ -50,7 +50,7 @@ input[type=checkbox]:checked + label:before {
 	position: absolute;
 	right: 0;
 	top: 50%;
-	animation: checking 1s ease;
+	animation: checking .3s ease;
 }
 
 input:checked ~ label {
