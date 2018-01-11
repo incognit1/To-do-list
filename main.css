@@ -4,9 +4,10 @@ body, ul, li, p, div, ul, ol, header, footer, label {
 }
 
 body {
-	background: url(https://mmoexaminer.com/wp-content/uploads/2017/10/sw352356.jpg);
+	background: url(bg.jpg);
 	font-family: Arial, Tahoma, sans-serif;
 	color: #fff;
+	background-color: #333;
 }
 
 h1 {
