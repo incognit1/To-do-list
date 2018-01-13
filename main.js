@@ -2,7 +2,8 @@
 
 	var createTask = get("#createTask"),
 		deleteTasks = get("#deleteTasks"),
-		list = get("#tasks");
+		list = get("#tasks"),
+		bg = get("#bg");
 
 	//Start data
 	function loadData() {
@@ -93,9 +94,16 @@
 
 	}, false)
 
+	bg.addEventListener("change", function(){
+		document.body.style.background = bg.value;
+	}, false)
+
 	function get(el) {
 		return document.querySelector(el);
 	}
+
+
+	//document.body.style.background = "url(" + prompt("Какой цвет фона?","green") + ")";
 
 //})();
 
