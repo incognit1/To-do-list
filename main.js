@@ -90,13 +90,21 @@
 			newArrItems[i].firstChild.setAttribute("id","item" + i);
 			newArrItems[i].lastChild.setAttribute("for","item" + i);
 		}
-
-
 	}, false)
 
+	//background
 	bg.addEventListener("change", function(){
 		document.body.style.background = bg.value;
 	}, false)
+
+
+	var degree = -5,
+		bgParam = get("#bg-param");
+	setInterval(function(){
+		degree = degree + 1 % 360;
+		bgParam.style.color = "hsl(" + degree + ", 30%, 45%)";
+	}, 200);
+
 
 	function get(el) {
 		return document.querySelector(el);
