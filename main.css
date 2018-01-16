@@ -3,6 +3,10 @@ body, ul, li, p, div, ul, ol, header, footer, label {
 	padding: 0px;
 }
 
+::selection {
+    background: #98514a70;
+}
+
 body {
 	background: url(bg.jpg);
 	font-family: Arial, Tahoma, sans-serif;

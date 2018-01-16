@@ -110,8 +110,5 @@
 		return document.querySelector(el);
 	}
 
-
-	//document.body.style.background = "url(" + prompt("Какой цвет фона?","green") + ")";
-
 //})();
 
