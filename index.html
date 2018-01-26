@@ -12,12 +12,12 @@
 		<h1>Мой список задач:</h1>
 		<ul id="tasks">
 		</ul>
-		<button id="createTask" class="bounceInLeft">Добавить новую задачу</button>
+		<button id="createTask">Добавить новую задачу</button>
 		<button id="deleteTasks">Удалить выполненные задачи</button>
 		
 		<footer>
 			<p>Для изменения любой задачи нажмите на нее правой кнопокой мыши</p>
-			<p id="bg-param">Выбрать цвет фона<input type="color" id="bg" list="colorList">
+			<p id="bg-param">Выбрать цвет фона<input type="color" id="bg" list="colorList"></p>
 			<datalist id="colorList">
 				<option value="#333333" label="Серый">
 				<option value="#3e2424" label="Зелёный">
@@ -25,6 +25,7 @@
 				<option value="#30434a" label="Синий">
 				<option value="#4f6d51" label="Синий">
 			</datalist>
+			<input id="bg-clear" type="button" value="Очистить фон">
 		</footer>
 	</div>
 	<script src="main.js"></script>

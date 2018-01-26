@@ -1,9 +1,13 @@
 //(function() {
 
+	if (window.localStorage.userBgColor) { document.body.style.background = window.localStorage.userBgColor; }
+
 	var createTask = get("#createTask"),
 		deleteTasks = get("#deleteTasks"),
 		list = get("#tasks"),
-		bg = get("#bg");
+		bg = get("#bg"),
+		bgClear = get('#bg-clear'),
+		bgParam = get("#bg-param");
 
 	//Start data
 	function loadData() {
@@ -25,7 +29,6 @@
 			list.appendChild(newLi);
 		}
 	}
-
 	loadData();
 
 	//Adding new task
@@ -95,11 +98,16 @@
 	//background
 	bg.addEventListener("change", function(){
 		document.body.style.background = bg.value;
+		window.localStorage.userBgColor = bg.value;
 	}, false)
 
+	bgClear.addEventListener("click", function(){
+		window.localStorage.clear();
+		document.body.style.background = "";
+	}, false)
 
-	var degree = -5,
-		bgParam = get("#bg-param");
+	//rainbow text
+	var degree = -5;
 	setInterval(function(){
 		degree = degree + 1 % 360;
 		bgParam.style.color = "hsl(" + degree + ", 30%, 45%)";
@@ -109,6 +117,6 @@
 	function get(el) {
 		return document.querySelector(el);
 	}
-
+	
 //})();
 

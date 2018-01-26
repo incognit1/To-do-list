@@ -1,4 +1,4 @@
-body, ul, li, p, div, ul, ol, header, footer, label {
+body, ul, li, p, div, ol, ul, header, label, footer {
 	margin: 0px;
 	padding: 0px;
 }
@@ -125,12 +125,21 @@ footer {
 	list-style-type: none;
 }
 
-#bg-param {
+#bg-clear,#bg-param {
     position: relative;
     text-decoration: underline;
     color: #c54a4a;
     margin: 5px 0 0px 0;
     display: inline-block;
+}
+
+#bg-clear {
+    float: right;
+    color: #424242 !important; 
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 
 footer input[type="color" i] {
