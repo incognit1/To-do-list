@@ -2,6 +2,10 @@
 
 	if (window.localStorage.userBgColor) { document.body.style.background = window.localStorage.userBgColor; }
 
+	//cache for bg
+	var img = new Image();
+	img.src = 'bg.jpg';
+
 	var createTask = get("#createTask"),
 		deleteTasks = get("#deleteTasks"),
 		list = get("#tasks"),
